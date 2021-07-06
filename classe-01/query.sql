@@ -45,4 +45,4 @@ SELECT categoria, COUNT(estoque) AS "quant. medicamentos" FROM farmacia WHERE ca
 SELECT idade, COUNT(idade) FROM usuarios WHERE idade >= 18 GROUP BY idade;
 
 --16
-SELECT categoria, SUM(estoque) AS "quant. do estoque dos medicamentos" FROM farmacia GROUP BY categoria;
+SELECT categoria, SUM(estoque) AS "quant. do estoque dos medicamentos" FROM farmacia GROUP BY categoria ORDER BY categoria LIMIT 3;
